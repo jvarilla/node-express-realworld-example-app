@@ -31,9 +31,11 @@ if (!isProduction) {
 }
 
 if(isProduction){
-  mongoose.connect(process.env.MONGODB_URI);
+  mongoose.connect('mongodb://joe123:joe123@ds143163.mlab.com:43163/conduit');
+  //process.env.MONGODB_URI);
 } else {
-  mongoose.connect('mongodb://localhost/conduit');
+  mongoose.connect('mongodb://joe123:joe123@ds143163.mlab.com:43163/conduit');
+  //'mongodb://localhost/conduit');
   mongoose.set('debug', true);
 }
 
