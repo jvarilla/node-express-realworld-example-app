@@ -17,7 +17,7 @@ app.use(session({
     store: new MongoStore(options)
 }));
 
-var isProduction = process.env.NODE_ENV === 'production';
+var isProduction = process.env.NODE_ENV === 'conduit';
 
 // Create global app object
 var app = express();
