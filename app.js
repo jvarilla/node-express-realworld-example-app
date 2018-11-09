@@ -9,13 +9,13 @@ var http = require('http'),
     errorhandler = require('errorhandler'),
     mongoose = require('mongoose');
 
-const session = require('express-session');
-const MongoStore = require('connect-mongo')(session);
+//const session = require('express-session');
+//const MongoStore = require('connect-mongo')(session);
  
-app.use(session({
+/*app.use(session({
     secret: 'foo',
     store: new MongoStore(options)
-}));
+}));*/
 
 var isProduction = process.env.NODE_ENV === 'conduit';
 
